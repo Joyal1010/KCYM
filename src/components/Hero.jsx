@@ -9,9 +9,7 @@ const images = [
   "/Picsart_26-02-22_18-55-07-711.jpg.jpeg",
   "/Picsart_26-04-05_20-26-33-547.jpg.jpeg",
   "/TMA04377.jpg.jpeg",
-  "/Picsart_26-05-04_22-50-36-230.jpg.jpeg",
-  "/Picsart_26-04-03_13-57-25-783 (2).jpg.jpeg",
-  "/Picsart_26-05-05_11-51-22-865.jpg.jpeg"
+  "/Picsart_26-05-04_22-50-36-230.jpg.jpeg"
 ];
 
 const Hero = () => {
