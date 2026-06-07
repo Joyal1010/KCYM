@@ -2,9 +2,9 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 const leaders = [
+  { role: "Guardian", image: "/Guardian.jpeg", name: "To be announced" },
   { role: "Director", image: "/Director.jpeg", name: "To be announced" },
   { role: "Animator", image: "/Animator.jpeg", name: "To be announced" },
-  { role: "Guardian", image: "/Guardian.jpeg", name: "To be announced" },
   { role: "President", image: "/President.jpeg", name: "To be announced" },
   { role: "Vice President", image: "/Vice President.jpeg", name: "To be announced" },
   { role: "Secretary", image: "/Secratory.jpeg", name: "To be announced" },
