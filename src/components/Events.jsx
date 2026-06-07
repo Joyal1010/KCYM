@@ -56,36 +56,21 @@ const Events = () => {
   useEffect(() => {
     const fetchInstagramPosts = async () => {
       try {
-        const apiUrl = import.meta.env.VITE_INSTAGRAM_API_URL;
-        if (!apiUrl) throw new Error("No API URL configured");
-
-        const response = await fetch(apiUrl);
-        if (!response.ok) throw new Error("Failed to fetch");
+        // Fetch from our new AI-powered serverless backend
+        const response = await fetch('/api/feed');
+        if (!response.ok) throw new Error("Failed to fetch from backend API");
 
         const data = await response.json();
         
-        // Map behold.so posts to our event format
         if (data && data.posts && data.posts.length > 0) {
-          const formattedPosts = data.posts.slice(0, 5).map((post, index) => {
+          const formattedPosts = data.posts.map((post, index) => {
             // Format date
             const dateObj = new Date(post.timestamp);
             const formattedDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' });
             
-            // Create a short title from caption or default
-            let title = "Instagram Update";
-            let desc = post.prunedCaption || post.caption || "View our latest post on Instagram!";
-            
-            if (desc.includes('\n')) {
-              const parts = desc.split('\n').filter(p => p.trim() !== '');
-              if (parts.length > 0) {
-                 title = parts[0].replace(/❤️|🤍|💛/g, '').trim() || "Instagram Update";
-                 desc = parts.slice(1).join(' ').trim();
-              }
-            }
-            
-            // Fallback for empty descriptions
-            if (!desc) desc = "Check out our latest update from the youth community.";
-            if (desc.length > 120) desc = desc.substring(0, 120) + '...';
+            // Use the beautifully generated AI Title and Description!
+            const title = post.aiTitle || "Latest Update";
+            const desc = post.aiDesc || "Check out our recent post on Instagram.";
 
             // Instagram videos don't always provide a mediaUrl that's an image, so thumbnailUrl is safer
             const image = post.sizes?.large?.mediaUrl || post.thumbnailUrl || post.mediaUrl;
