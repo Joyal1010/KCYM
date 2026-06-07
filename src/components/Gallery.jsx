@@ -48,6 +48,7 @@ const Gallery = () => {
             <img 
               src={src} 
               alt={`Gallery image ${idx + 1}`} 
+              loading="lazy"
               className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>

@@ -71,7 +71,7 @@ const Events = () => {
         {events.map((event) => (
           <div key={event.id} className="event-card w-[80vw] md:w-[40vw] h-full flex-shrink-0 relative group perspective-[1000px]">
             <div className="w-full h-full relative overflow-hidden rounded-lg transition-transform duration-700 ease-out group-hover:scale-[1.02] transform-style-3d">
-              <img src={event.img} alt={event.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <img src={event.img} alt={event.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent" />
               <div className="absolute inset-0 border border-white/10 rounded-lg pointer-events-none" />
               

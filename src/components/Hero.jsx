@@ -58,7 +58,7 @@ const Hero = () => {
   }, [currentImage]);
 
   return (
-    <section ref={containerRef} id="home" className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+    <section ref={containerRef} id="home" className="hero relative h-screen w-full overflow-hidden flex items-center justify-center">
       {/* Background Image Slideshow */}
       <div ref={bgRef} className="absolute inset-0 w-full h-[120%] -top-[10%] z-0">
         <AnimatePresence>

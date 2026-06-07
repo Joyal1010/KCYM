@@ -58,6 +58,7 @@ const About = () => {
           ref={imageRef}
           src="https://images.unsplash.com/photo-1548625361-ec84920b5fa7?q=80&w=2574&auto=format&fit=crop" 
           alt="Church architecture"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
       </div>

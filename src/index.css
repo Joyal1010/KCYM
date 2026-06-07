@@ -85,3 +85,81 @@ html.lenis, html.lenis body {
 .animate-fire {
   animation: fire-flicker 2s infinite ease-in-out;
 }
+
+/* FIX 1 — HEADER SCROLL SHRINK + GLASS BLUR */
+header {
+  transition: padding 0.3s ease, background 0.3s ease, backdrop-filter 0.3s ease;
+}
+header.scrolled {
+  padding: 10px 24px !important;
+  backdrop-filter: blur(16px) !important;
+  background: rgba(10, 10, 15, 0.85) !important;
+}
+
+/* FIX 2 — ACTIVE NAV LINK HIGHLIGHT */
+.nav-links a.active {
+  color: #c9a84c; /* gold color */
+  border-bottom: 1px solid #c9a84c;
+  padding-bottom: 2px;
+}
+
+/* FIX 3 — HERO TEXT READABILITY OVERLAY */
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 10, 15, 0.55) 0%,
+    rgba(10, 10, 15, 0.25) 50%,
+    rgba(10, 10, 15, 0.72) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-text-wrapper,
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* FIX 4 — MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  /* Scalable hero heading */
+  .hero h1 {
+    font-size: clamp(2.2rem, 10vw, 5rem);
+    line-height: 1.1;
+  }
+
+  /* Fix iOS viewport height bug on hero */
+  .hero,
+  .hero-section {
+    height: 100svh !important;
+  }
+
+  /* Stack any side-by-side section layouts */
+  .about-grid,
+  .split-layout,
+  .two-col {
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix oversized section padding on mobile */
+  section {
+    padding: 60px 20px !important;
+  }
+}
+
+/* FIX 5 — IMAGE PERFORMANCE */
+/* Prevent layout shift on lazy images */
+img:not(.slide img):not(.hero img):not([src="/logo.png"]) {
+  width: 100%;
+  height: auto;
+  display: block;
+}
