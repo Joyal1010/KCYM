@@ -66,7 +66,7 @@ const About = () => {
           KCYM is more than just a youth organization; through its activities in various sectors of society, it has consistently demonstrated its commitment, dedication, and love for the community. KCYM Kottiyoor has organized many exemplary and commendable initiatives, ensuring that the strengths and talents of each office bearer are effectively utilized for the betterment of society.
         </p>
       </div>
-      <div className="w-full md:w-1/2 h-[60vh] overflow-hidden rounded-[2.5rem] shadow-2xl relative perspective-[1000px] border border-white/10">
+      <div className="w-full md:w-1/2 aspect-video md:aspect-auto md:h-[60vh] overflow-hidden rounded-[2.5rem] shadow-2xl relative perspective-[1000px] border border-white/10">
         <div className="absolute inset-0 bg-gold/10 mix-blend-overlay z-10 pointer-events-none" />
         <img 
           ref={imageRef}
