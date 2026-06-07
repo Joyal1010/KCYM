@@ -56,7 +56,7 @@ const Header = () => {
     };
   }, []);
 
-  const links = ['Home', 'About', 'Events', 'Gallery', 'Contact'];
+  const links = ['Home', 'About', 'Leadership', 'Events', 'Gallery', 'Contact'];
 
   return (
     <header ref={headerRef} className="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-2 lg:px-12 lg:py-3">

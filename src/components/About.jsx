@@ -70,7 +70,7 @@ const About = () => {
         <div className="absolute inset-0 bg-gold/10 mix-blend-overlay z-10 pointer-events-none" />
         <img 
           ref={imageRef}
-          src="/WhatsApp Image 2026-06-07 at 1.58.37 PM.jpeg" 
+          src="/WhatsApp Image 2025-07-12 at 10.25.31_5bf7f51d.jpg" 
           alt="Church architecture"
           loading="lazy"
           className="w-full h-full object-cover"
