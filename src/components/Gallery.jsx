@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const images = [
   "https://images.unsplash.com/photo-1548625361-ec84920b5fa7?q=80&w=1000&auto=format&fit=crop",
