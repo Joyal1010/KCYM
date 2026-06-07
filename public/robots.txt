@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://kcymkottiyoor.vercel.app/sitemap.xml
+Sitemap: https://kcymkottiyoor.site/sitemap.xml
