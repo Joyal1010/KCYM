@@ -5,7 +5,7 @@ import { ArrowDown, ChevronLeft, ChevronRight } from 'lucide-react';
 import BlurText from './BlurText';
 
 const images = [
-  "/IMG_20260604_180209102.jpg.jpeg",
+  "/first.jpeg",
   "/Picsart_26-02-22_18-55-07-711.jpg.jpeg",
   "/Picsart_26-04-05_20-26-33-547.jpg.jpeg",
   "/TMA04377.jpg.jpeg",
