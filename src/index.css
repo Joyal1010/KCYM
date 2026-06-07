@@ -158,7 +158,7 @@ header.scrolled {
 
 /* FIX 5 — IMAGE PERFORMANCE */
 /* Prevent layout shift on lazy images */
-img:not(.slide img):not(.hero img):not([src="/logo.png"]) {
+img:not(.slide img):not(.hero img):not([src="/logo.png"]):not(.object-cover) {
   width: 100%;
   height: auto;
   display: block;
