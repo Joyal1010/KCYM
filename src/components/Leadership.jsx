@@ -2,15 +2,17 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 const leaders = [
-  { role: "Guardian", image: "/Guardian.jpeg", name: "To be announced" },
-  { role: "Director", image: "/Director.jpeg", name: "To be announced" },
-  { role: "Animator", image: "/Animator.jpeg", name: "To be announced" },
-  { role: "President", image: "/President.jpeg", name: "To be announced" },
-  { role: "Vice President", image: "/Vice President.jpeg", name: "To be announced" },
-  { role: "Secretary", image: "/Secratory.jpeg", name: "To be announced" },
-  { role: "Treasurer", image: "/Tressurer.jpeg", name: "To be announced" },
-  { role: "Coordinator", image: "/Cordinator.jpeg", name: "To be announced" },
-  { role: "Unit Syndicate", image: "/Unit Syndicate.jpeg", name: "To be announced" },
+  { role: "Guardian", image: "/Guardian.jpeg", name: "Fr. Biju Thuruthel" },
+  { role: "Director", image: "/Director.jpeg", name: "Fr. Shinto Kulangara" },
+  { role: "Animator", image: "/Animator.jpeg", name: "Sr. Dona SH" },
+  { role: "President", image: "/President.jpeg", name: "Amal Sebastian" },
+  { role: "Vice President", image: "/Vice President.jpeg", name: "Diya Mariya" },
+  { role: "Secretary", image: "/Secratory.jpeg", name: "Liya Philip" },
+  { role: "Joint Secretary", image: "/Joint Secretry.jpeg", name: "Varghese" },
+  { role: "Treasurer", image: "/Tressurer.jpeg", name: "Alex Saji" },
+  { role: "Coordinator", image: "/Cordinator.jpeg", name: "Annmariya Joshy" },
+  { role: "Unit Syndicate", image: "/Unit Syndicate.jpeg", name: "Andriya Mary Jim" },
+  { role: "Unit Syndicate", image: "/Unit Syndicate_1.jpeg", name: "Abik D Bojo" },
 ];
 
 const Leadership = () => {
