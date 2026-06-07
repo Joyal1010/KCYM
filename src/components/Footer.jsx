@@ -116,7 +116,7 @@ const Footer = () => {
             <span>&copy; {new Date().getFullYear()} KCYM Kottiyoor. All rights reserved.</span>
           </div>
           <p className="text-sm text-white/40 font-light flex items-center gap-1">
-            Designed by <a href="https://joyaltomthomas.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors font-medium">joyaltomthomas</a>
+            Designed by <a href="https://www.instagram.com/joyalt._/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors font-medium">joyaltomthomas</a>
           </p>
         </div>
         
