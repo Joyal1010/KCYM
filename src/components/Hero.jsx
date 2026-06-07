@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import gsap from 'gsap';
-import { ArrowDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowDown, ArrowLeft, ArrowRight } from 'lucide-react';
 import BlurText from './BlurText';
 
 const images = [
@@ -122,15 +122,15 @@ const Hero = () => {
       {/* Navigation Buttons */}
       <button 
         onClick={prevImage}
-        className="absolute left-4 md:left-10 z-30 p-3 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur-md text-white transition-all interactive border border-white/10"
+        className="absolute left-4 md:left-10 z-30 p-2 text-white/40 hover:text-white transition-colors interactive drop-shadow-md"
       >
-        <ChevronLeft size={24} />
+        <ArrowLeft strokeWidth={1.5} size={20} />
       </button>
       <button 
         onClick={nextImage}
-        className="absolute right-4 md:right-10 z-30 p-3 rounded-full bg-black/20 hover:bg-black/40 backdrop-blur-md text-white transition-all interactive border border-white/10"
+        className="absolute right-4 md:right-10 z-30 p-2 text-white/40 hover:text-white transition-colors interactive drop-shadow-md"
       >
-        <ChevronRight size={24} />
+        <ArrowRight strokeWidth={1.5} size={20} />
       </button>
 
       {/* Scroll Indicator */}
